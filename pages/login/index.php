@@ -17,7 +17,7 @@ if (isset($_SESSION['logged']) AND $_SESSION['logged'] === true) {
 </head>
 <body>
 	<div class="container">
-		<form action="../../php/login.php" method="post">
+		<form action="../../includes/login.php" method="post">
 			<div class="box">
 				<div class="header">
 					<h4>Login</h4>
