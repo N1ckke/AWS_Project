@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-if (isset($_SESSION['logged']) AND $_SESSION['logged'] === true) {
-	header("Location: ../");
+if (!isset($_SESSION['logged']) AND $_SESSION['logged'] !== true) {
+	header("Location: /login/index.php");
 	return;
 }
 ?>
