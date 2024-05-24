@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (isset($_SESSION['logged']) AND $_SESSION['logged'] === true) {
+	header("Location: ../");
+	return;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
